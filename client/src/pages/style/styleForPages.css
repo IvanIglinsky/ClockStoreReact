@@ -1,0 +1,16 @@
+.mainShopPage {
+    padding:5px 10px;
+    background: rgba(255,255,255,0.5);
+}
+#root{
+    min-height: 125vh;
+    background: url("../ImgForPages/backGround.jpg");
+}
+
+/*DevicePage*/
+.ImgItem{
+    border: 4px solid lightgray;
+}
+.ImgItem:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 255);
+}

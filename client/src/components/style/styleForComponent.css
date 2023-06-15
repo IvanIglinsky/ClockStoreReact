@@ -1,0 +1,70 @@
+.OneItem{
+    border-radius: 5%;
+}
+.OneItem:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 255);
+}
+
+/*Style for navBar*/
+.buttonAdmin:hover{
+    box-shadow: 0 0 10px rgb(244, 244, 244);
+    background-color: #343a40;
+}
+.MainTextLogo:hover{
+    text-shadow: 0 0 10px rgb(244, 244, 244);
+}
+
+/*TypeBar*/
+.list-group-item:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/*BrandBar*/
+.brandBarElement:hover{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    border-color: #ccc;
+}
+.brandBarElement{
+    display: flex;
+    justify-content: center;
+    transition: border-color 0.3s ease;
+    min-width: 130px;
+    min-height: 40px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+.brandBarContainer {
+    overflow-x: auto;
+}
+.brandBarElement:hover .brandBarText {
+    color: blue;
+}
+.brandBarRow {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 1px;
+}
+
+.brandBarText{
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.selected {
+    background-color: #ffdddd;
+    border-color: #ff0000 !important;
+}
+.selected .brandBarText {
+    color: #ff0000;
+}
+/*SortList*/
+.elemOfList:hover{
+    background: grey;
+
+}
+.current-page {
+    color: transparent !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
