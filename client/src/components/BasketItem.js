@@ -28,6 +28,7 @@ const BasketItem = observer(({ device, onRemove }) => {
                 </Col>
                 <Col xs={3}>
                     <button className="btn btn-danger" onClick={handleRemove}>Видалити</button>
+                    <button className="btn btn-success ml-2">Оплатити</button>
                 </Col>
             </Row>
         </Container>

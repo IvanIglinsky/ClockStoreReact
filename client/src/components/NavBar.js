@@ -32,7 +32,7 @@ const NavBar = observer(() => {
 
                 <NavLink style={{color:'white',textDecoration:'none'}} to={SHOP_ROUTE} className={"MainTextLogo"}>
                     <Image src={BrendLogo} width={25} height={25} ></Image>
-                    Clocks Store </NavLink>
+                    Apple Store </NavLink>
                 {user.isAuth ?
                     <Nav className="ml-auto" style={{color: 'white'}}>
                         <Button

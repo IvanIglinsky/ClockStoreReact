@@ -3,7 +3,7 @@ import {Container} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TypeBar from "../components/TypeBar";
-import BrandBar from "../components/BrandBar";
+
 import DeviceList from "../components/DeviceList";
 import Filtres from "../components/Filters";
 
@@ -12,6 +12,9 @@ import {Context} from "../index";
 import {fetchBrands, fetchDevices, fetchTypes} from "../http/deviceAPI";
 import Pages from "../components/Pages";
 import "./style/styleForPages.css"
+import Spinner from "../components/Spinner";
+
+
 const Shop = observer(() => {
     const {device} = useContext(Context)
 
@@ -34,21 +37,26 @@ const Shop = observer(() => {
     }, [device.page, device.selectedType, device.selectedBrand,])
 
     return (
+
         <Container className={"mainShopPage"}>
+            < Spinner/>
             <Row className="mt-2">
                 <Col md={3}>
-                    <TypeBar/>
                     <Filtres/>
+                    <TypeBar/>
+
 
                 </Col>
 
                 <Col md={9}>
-                    <BrandBar/>
+
                     <DeviceList/>
                     <Pages/>
+
                 </Col>
 
             </Row>
+
         </Container>
     );
 });

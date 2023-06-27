@@ -36,7 +36,7 @@ const Admin = () => {
                 className="mt-4 p-2"
                 onClick={() => setDeviceVisible(true)}
             >
-                Додати годиник
+                Додати товар
             </Button>
             <Button
                 variant={"outline-light"}

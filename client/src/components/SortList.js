@@ -13,7 +13,7 @@ const SortList = observer(() => {
     const { device } = useContext(Context);
 
     const handleSort = (sortType) => {
-        device.sortDevices(sortType); // Вызов функции для сортировки товаров по выбранному типу
+        device.sortDevices(sortType);
     };
 
     return (

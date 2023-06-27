@@ -3,7 +3,7 @@
     background: rgba(255,255,255,0.5);
 }
 #root{
-    min-height: 125vh;
+    min-height: 100vh;
     background: url("../ImgForPages/backGround.jpg");
 }
 

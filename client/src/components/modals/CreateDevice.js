@@ -50,7 +50,7 @@ const CreateDevice = observer(({show, onHide}) => {
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Додати годиник
+                    Додати товар
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
@@ -85,13 +85,13 @@ const CreateDevice = observer(({show, onHide}) => {
                         value={name}
                         onChange={e => setName(e.target.value)}
                         className="mt-3"
-                        placeholder="Введіть назву годиника"
+                        placeholder="Введіть назву товару"
                     />
                     <Form.Control
                         value={price}
                         onChange={e => setPrice(Number(e.target.value))}
                         className="mt-3"
-                        placeholder="Введіть ціну годиника"
+                        placeholder="Введіть ціну товару"
                         type="number"
                     />
                     <Form.Control

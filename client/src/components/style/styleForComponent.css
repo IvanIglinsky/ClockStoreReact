@@ -62,9 +62,18 @@
     background: grey;
 
 }
+.elemOfList{
+    margin-left: 15px;
+    margin-right: 10px;
+}
 .current-page {
     color: transparent !important;
     background-color: transparent !important;
     border-color: transparent !important;
 }
 
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}

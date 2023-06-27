@@ -10,14 +10,17 @@ const DeviceItem = ({device}) => {
     const history = useNavigate ()
     let price=device.price.toLocaleString()
     let txt="Годиник"
-    if(device.typeId==2){
-        txt="Ремінець для годиника";
+    if(device.typeId==1){
+        txt="Телефон";
+    }
+    else if(device.typeId==2){
+        txt="Ноутбук";
     }
     else if(device.typeId==3){
-        txt="Скринька для годиника";
+        txt="Комп'ютер";
     }
     else if(device.typeId==4){
-        txt="Кишеньковий годиник";
+        txt="Гаджети та аксесуари";
     }
     return (
         <Col md={3} className={"mt-3 OneItem  d-flex justify-content-center bg-white mr-5"}  onClick={() => history(DEVICE_ROUTE + '/' + device.id)}>

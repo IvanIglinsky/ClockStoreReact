@@ -10,6 +10,6 @@ router.get('/:name', deviceController.getByName);
 
 router.put("/:id/:rating", checkRole('ADMIN'),deviceController.updateRating)
 router.put('/:id', checkRole('ADMIN'),deviceController.updateDevice)
-router.delete('/:id', deviceController.deleteDevice)
+router.delete('/:id',checkRole('ADMIN'), deviceController.deleteDevice)
 
 module.exports = router

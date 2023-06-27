@@ -3,7 +3,7 @@ import SortList from "./SortList";
 
 const Filters = () => {
     return (
-        <div>
+        <div className="mb-3">
         <h3 className="ml-2">
         </h3>
             <SortList/>

@@ -8,6 +8,7 @@ import {check} from "./http/userAPI";
 import {Spinner} from "react-bootstrap";
 
 
+
 const App = observer(() => {
     const {user} = useContext(Context)
     const [loading, setLoading] = useState(true)
@@ -27,6 +28,7 @@ const App = observer(() => {
         <BrowserRouter>
             <NavBar />
             <AppRouter />
+
         </BrowserRouter>
     );
 });
